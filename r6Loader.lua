@@ -1,3 +1,4 @@
+local plr = game.Players.LocalPlayer
 function RunCustomAnimation(Char)
     if Char:WaitForChild("Animate") ~= nil then
         Char.Animate.Disabled = true
@@ -920,3 +921,4 @@ function RunCustomAnimation(Char)
         end
     end)
 end
+RunCustomAnimation(plr.Character)
